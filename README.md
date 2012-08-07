@@ -2,10 +2,10 @@
 
 ## What is this?
 
-A special build of mustache.js (by @janl) which works within the security policies defined by
+A special build of [mustache.js](https://github.com/janl/mustache.js) (by [@janl](https://github.com/janl)) which works within the security policies defined by
 the Google Chrome Apps/Extensions [Content Security Policy](http://code.google.com/chrome/extensions/contentSecurityPolicy.html). 
 
-In CSP, inline JavaScript as well as potentially harmful string-to-JS methods such as `eval` are not executed. Whilst great for security, this also means that it can be a challenge finding a popular templating engine which doesn't use features disabled by the CSP. 
+In CSP, inline JavaScript as well as potentially harmful string-to-JS methods such as `eval` are not executed. Whilst great for security, this also means that it can be a challenge finding a popular templating engine which doesn't use features disabled by the policy. 
 
 This version of mustache works fine under the CSP and has been used with frameworks such as Backbone.js within Chrome Apps without any issues.
 
