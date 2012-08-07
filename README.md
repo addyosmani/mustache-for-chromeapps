@@ -11,7 +11,7 @@ This version of mustache works fine under the CSP and has been used with framewo
 
 ## What alternatives are available that work with Chrome Apps?
 
-* Pre-compiling your templates. [Handlebars](http://handlebarsjs.com/) offers this feature and Matthew Robertson has a good [post](http://matthewrobertson.org/blog/2012/07/10/javascript-templates-and-chromes-content-security-policy/) which outlines a strategy for pre-compiling templates that works with CSP. 
+* Pre-compiling your templates. [Handlebars](http://handlebarsjs.com/) offers this feature and Matthew Robertson has a good [post](http://matthewrobertson.org/blog/2012/07/10/javascript-templates-and-chromes-content-security-policy/) which outlines a strategy for pre-compiling templates that works with CSP. Note that with `manifest_version: 2`, you must use precompilation if opting for handlebars. If you try to use `Handlebars.compile()` you will get an error about CSP error violations.
 
 * [Closure Templates](https://developers.google.com/closure/templates/) is a templating library which also doesn't not use `eval`. Templates are simply compiled to JavaScript ahead of time, so that what gets included 
 in your app is a plain .js file that should not run into CSP issues.
