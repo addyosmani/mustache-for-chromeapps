@@ -31,7 +31,7 @@ in your app is a plain .js file that should not run into CSP issues.
 },
 ```
 Sandboxed pages don't have extensions, app APIs or access to pages which are non-sandboxed, but can communicate
-with them using `postMessage()`. See [this example](https://github.com/GoogleChrome/chrome-app-samples/tree/master/eval-in-iframe) which demonstrates circumventing the problem.
+with them using `postMessage()`. See [this example](https://github.com/GoogleChrome/chrome-app-samples/tree/master/sandbox) which demonstrates circumventing the problem. This example compiles Handlebar templates in a sandboxed iframe and returns the generated HTML to the caller page.
 
 > What could be more logical awesome than no logic at all?
 
