@@ -78,11 +78,14 @@ In this example, the `Mustache.to_html` function takes two parameters: 1) the
 [mustache](http://mustache.github.com/) template and 2) a `view` object that
 contains the data and code needed to render the template.
 
-  ### browserify
+### browserify
+Use mustache.js in your browser as a module using browserify
 
-    var Mustache = require('mustache-for-chromeapps');
+```js
+  var Mustache = require('mustache-for-chromeapps');
 
-    var html = Mustache.to_html(...);
+  var html = Mustache.to_html(...);
+```
 
 
 ## Template Tag Types
