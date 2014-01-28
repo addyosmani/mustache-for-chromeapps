@@ -4,7 +4,7 @@
   See http://mustache.github.com/ for more info.
 */
 
-var Mustache = function () {
+var Mustache = module.exports = function () {
   var _toString = Object.prototype.toString;
 
   Array.isArray = Array.isArray || function (obj) {

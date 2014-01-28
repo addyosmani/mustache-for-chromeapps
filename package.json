@@ -1,0 +1,12 @@
+{
+  "name": "mustache-for-chromeapps",
+  "version": "0.0.2",
+  "description": "Logic-less {{mustache}} templates with JavaScript",
+  "author": "Addy Osmani <https://github.com/addyosmani/mustache-for-chromeapps>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/addyosmani/mustache-for-chromeapps.git"
+  },
+  "keywords": ["mustache", "template", "templates", "ejs", "chrome", "browser"],
+  "main": "./mustache.js"
+}
